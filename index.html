@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remy Beauregard | Template Site</title>
+    <meta name="description" content="Template website for remybeauregard.github.io" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="#">Remy Beauregard</a>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="tag">Template Website</p>
+        <h1>Welcome to remybeauregard.github.io</h1>
+        <p class="lead">
+          This is a clean starter template you can customize with your own content,
+          photos, and links.
+        </p>
+        <a class="button" href="#contact">Get in Touch</a>
+      </section>
+
+      <section id="about" class="section alt">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            Replace this text with a short biography and professional summary.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="container cards">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>Short placeholder description of a project or research focus.</p>
+          </article>
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>Short placeholder description of a project or research focus.</p>
+          </article>
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>Short placeholder description of a project or research focus.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>© <span id="year"></span> Remy Beauregard</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
