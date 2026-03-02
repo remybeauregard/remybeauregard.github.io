@@ -283,7 +283,7 @@ a:hover {
   appearance: none;
   cursor: pointer;
   color: var(--muted);
-  font-size: 1.3rem;
+  font-size: 2.6rem;
   padding: 0 0.3rem;
   vertical-align: middle;
   line-height: 1;
@@ -296,7 +296,6 @@ a:hover {
 /* ── Teaching ── */
 
 .teaching-statement {
-  max-width: 64ch;
   color: var(--muted);
   font-style: italic;
   margin: 0 0 2rem;
