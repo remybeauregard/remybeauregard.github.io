@@ -170,6 +170,7 @@ a:hover {
 .profile-photo-wrap {
   display: flex;
   justify-content: center;
+  padding-top: 0.3rem;
 }
 
 .profile-photo-placeholder {
