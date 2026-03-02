@@ -418,3 +418,19 @@ a:hover {
     gap: 0.2rem;
   }
 }
+
+.student-review {
+  margin: 0 0 1rem;
+  padding: 0.875rem 1.25rem;
+  border-left: 3px solid var(--blue-mid);
+  background: var(--bg-alt);
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  border-radius: 0 4px 4px 0;
+}
+
+.student-review:last-child {
+  margin-bottom: 0;
+}
