@@ -3,81 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template Website</title>
+    <title>Remy Beauregard | Economist</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
+
+    <header class="site-header">
       <nav class="nav container">
-        <div class="logo">TemplateCo</div>
+        <a class="nav-name" href="#top">Remy Beauregard</a>
         <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#teaching">Teaching</a></li>
         </ul>
+        <div class="nav-actions">
+          <a href="https://www.linkedin.com/in/rebeauregard/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" class="icon-link" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <!-- Update BLUESKY_HANDLE below with your Bluesky username, e.g. yourname.bsky.social -->
+          <a href="https://bsky.app/profile/BLUESKY_HANDLE"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Bluesky" class="icon-link" title="Bluesky">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 530" fill="currentColor" width="22" height="20" aria-hidden="true">
+              <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.091 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+            </svg>
+          </a>
+          <!-- Place your CV file at cv.pdf in the root of this repository -->
+          <a href="cv.pdf" download class="cv-button" title="Download CV">CV</a>
+        </div>
       </nav>
-      <div class="hero-content container">
-        <h1>Build your next project faster</h1>
-        <p>
-          A clean starter template for landing pages, portfolios, and product sites.
-        </p>
-        <a href="#contact" class="button">Get Started</a>
-      </div>
     </header>
 
-    <main>
-      <section id="features" class="section container">
-        <h2>Features</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Responsive Design</h3>
-            <p>Looks great on desktop, tablet, and mobile with a modern layout.</p>
-          </article>
-          <article class="card">
-            <h3>Easy to Customize</h3>
-            <p>Adjust colors, spacing, and typography to match your brand quickly.</p>
-          </article>
-          <article class="card">
-            <h3>Fast and Lightweight</h3>
-            <p>Minimal dependencies for quick load times and simple maintenance.</p>
-          </article>
+    <main id="top">
+
+      <!-- ── About ── -->
+      <section id="about" class="section">
+        <div class="container profile-layout">
+          <div class="profile-photo-wrap">
+            <!--
+              To add your photo:
+              1. Place your image file in this repository folder (e.g. profile.jpg)
+              2. Replace the <div> below with:
+                 <img src="profile.jpg" alt="Remy Beauregard" class="profile-img" />
+            -->
+            <div class="profile-photo-placeholder" aria-hidden="true">
+              <span>RB</span>
+            </div>
+          </div>
+          <div class="profile-bio">
+            <h1>Remy Beauregard</h1>
+            <p class="title-line">PhD Candidate in Economics &middot; University of California, Davis</p>
+            <p>
+              I am a fifth-year PhD candidate in Economics at UC Davis, specializing in
+              behavioral, experimental, and development economics. My research explores
+              meaningful work, workfare, and mental health. My advisors are
+              Anujit Chakraborty and Arman Rezaee.
+            </p>
+            <p>
+              Prior to my PhD, I was a Research Associate in the research department of
+              the Federal Reserve Bank of San Francisco. I received my B.A. in Economics
+              and Psychology from Vassar College.
+            </p>
+            <p>I am on the 2025&ndash;2026 job market.</p>
+            <p class="contact-email">
+              <a href="mailto:rebeauregard@ucdavis.edu">rebeauregard@ucdavis.edu</a>
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="about" class="section alt">
+      <!-- ── Research ── -->
+      <section id="research" class="section alt">
         <div class="container">
-          <h2>About this Template</h2>
-          <p>
-            This template gives you a practical structure to launch a small website
-            with sections, navigation, and a clear call-to-action.
-          </p>
+          <h2>Research</h2>
+
+          <div class="paper-group">
+            <h3>Working Papers</h3>
+            <ul class="paper-list">
+              <li class="paper">
+                <p class="paper-title">Meaningful Work, Mental Health, and Workfare</p>
+                <p class="paper-details"><em>Job Market Paper</em></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="paper-group">
+            <h3>Publications</h3>
+            <ul class="paper-list">
+              <li class="paper">
+                <p class="paper-title">
+                  <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022199624000886"
+                     target="_blank" rel="noopener noreferrer">
+                    Inflation Expectations and Risk Premia in Emerging Bond Markets: Evidence from Mexico
+                  </a>
+                </p>
+                <p class="paper-details">
+                  with Jens H.&thinsp;E. Christensen, Eric Fischer, and Simon Zhu<br />
+                  <em>Journal of International Economics</em>, vol. 151, 2024
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section container">
-        <h2>Contact</h2>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" placeholder="Your name" />
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Message
-            <textarea rows="4" placeholder="How can we help?"></textarea>
-          </label>
-          <button type="submit" class="button">Send Message</button>
-        </form>
+      <!-- ── Teaching ── -->
+      <section id="teaching" class="section">
+        <div class="container">
+          <h2>Teaching</h2>
+          <p class="teaching-statement">
+            I am committed to promoting equity and excellence in economics education,
+            and believe strongly in the empowerment of students from historically
+            underrepresented backgrounds.
+          </p>
+
+          <div class="course-group">
+            <h3>University of California, Davis</h3>
+            <ul class="course-list">
+              <li class="course">
+                <div class="course-info">
+                  <span class="course-code">ECN 102</span>
+                  <span class="course-name"><!-- Update with full course name --></span>
+                </div>
+                <span class="course-role">Instructor of Record</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
+
     </main>
 
     <footer class="footer">
       <div class="container">
-        <p>© 2026 TemplateCo. All rights reserved.</p>
+        <p>
+          Remy Beauregard &middot; Department of Economics &middot;
+          University of California, Davis &middot;
+          <a href="mailto:rebeauregard@ucdavis.edu">rebeauregard@ucdavis.edu</a>
+        </p>
       </div>
     </footer>
+
   </body>
 </html>
