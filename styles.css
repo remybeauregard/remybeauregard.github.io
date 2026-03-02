@@ -290,7 +290,6 @@ a:hover {
 /* ── Teaching ── */
 
 .teaching-statement {
-  max-width: 64ch;
   color: var(--muted);
   font-style: italic;
   margin: 0 0 2rem;
