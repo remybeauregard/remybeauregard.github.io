@@ -85,7 +85,11 @@
                     Meaningful Work, Mental Health, and Workfare
                   </a>
                 </p>
-                <p class="paper-details"><em>Job Market Paper</em></p>
+                <p class="paper-details">
+                  <em>Job Market Paper</em>
+                  <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-jmp">&#9650;</button>
+                </p>
+                <p class="paper-abstract" id="abstract-jmp" hidden><!-- Paste abstract text here --></p>
               </li>
             </ul>
           </div>
@@ -165,5 +169,15 @@
       </div>
     </footer>
 
+  <script>
+    document.querySelectorAll('.abstract-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        btn.innerHTML = expanded ? '&#9650;' : '&#9660;';
+        document.getElementById(btn.getAttribute('aria-controls')).hidden = expanded;
+      });
+    });
+  </script>
   </body>
 </html>

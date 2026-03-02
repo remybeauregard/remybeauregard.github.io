@@ -264,6 +264,27 @@ a:hover {
   color: var(--muted);
 }
 
+.paper-abstract {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.abstract-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 0.65rem;
+  padding: 0 0.3rem;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.abstract-toggle:hover {
+  color: var(--primary);
+}
+
 /* ── Teaching ── */
 
 .teaching-statement {
