@@ -84,7 +84,7 @@
                      target="_blank" rel="noopener noreferrer">
                     Meaningful Work, Mental Health, and Workfare
                   </a>
-                  <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-jmp">&#9650;</button>
+                  <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-jmp">&#9660;</button>
                 </p>
                 <p class="paper-details">
                   <em>Job Market Paper</em>
@@ -103,7 +103,7 @@
                      target="_blank" rel="noopener noreferrer">
                     Inflation Expectations and Risk Premia in Emerging Bond Markets: Evidence from Mexico
                   </a>
-                  <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-jie">&#9650;</button>
+                  <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-jie">&#9660;</button>
                 </p>
                 <p class="paper-details">
                   with Jens H.&thinsp;E. Christensen, Eric Fischer, and Simon Zhu<br />
@@ -176,7 +176,7 @@
       btn.addEventListener('click', () => {
         const expanded = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!expanded));
-        btn.innerHTML = expanded ? '&#9650;' : '&#9660;';
+        btn.innerHTML = expanded ? '&#9660;' : '&#9650;';
         document.getElementById(btn.getAttribute('aria-controls')).hidden = expanded;
       });
     });
