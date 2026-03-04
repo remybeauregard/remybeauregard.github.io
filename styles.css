@@ -1,15 +1,14 @@
 :root {
-  /* Southwestern Sunset — Solarized Light base */
-  --navy: #6b1f1f;        /* deep maroon — headings */
-  --primary: #8b2020;     /* deep rusty blood red — links */
-  --primary-hover: #6e1818;
-  --text: #433830;        /* warm dark brown */
-  --muted: #8a7060;       /* warm taupe */
+  --navy: #1e3a5f;
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --text: #1e293b;
+  --muted: #64748b;
   --bg: #ffffff;
-  --bg-alt: #f8f4f0;      /* very light warm white */
-  --border: #e8ddd5;      /* soft warm gray */
-  --blue-tint: #fdf5f2;   /* barely-there blush */
-  --blue-mid: #ecddd7;    /* soft dusty rose — paper accents */
+  --bg-alt: #f8fafc;
+  --border: #e2e8f0;
+  --blue-tint: #dbeafe;
+  --blue-mid: #bfdbfe;
 }
 
 *, *::before, *::after {
