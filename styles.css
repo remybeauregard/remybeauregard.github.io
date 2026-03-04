@@ -5,9 +5,9 @@
   --primary-hover: #a83b10;
   --text: #433830;        /* warm dark brown */
   --muted: #8a7060;       /* warm taupe */
-  --bg: #fdf6e3;          /* solarized cream */
-  --bg-alt: #eee8d5;      /* solarized warm sand */
-  --border: #d4c4a8;      /* desert tan */
+  --bg: #ffffff;
+  --bg-alt: #f8f4f0;      /* very light warm white */
+  --border: #e8ddd5;      /* soft warm gray */
   --blue-tint: #fce8d0;   /* pale peach */
   --blue-mid: #f0c090;    /* warm amber */
 }
