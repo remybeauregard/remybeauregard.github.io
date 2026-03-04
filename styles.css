@@ -1,14 +1,15 @@
 :root {
-  --navy: #1e3a5f;
-  --primary: #1d4ed8;
-  --primary-hover: #1e40af;
-  --text: #1e293b;
-  --muted: #64748b;
-  --bg: #ffffff;
-  --bg-alt: #f8fafc;
-  --border: #e2e8f0;
-  --blue-tint: #dbeafe;
-  --blue-mid: #bfdbfe;
+  /* Southwestern Sunset — Solarized Light base */
+  --navy: #6b3a2a;        /* deep adobe / dark terracotta */
+  --primary: #cb4b16;     /* solarized orange — sunset */
+  --primary-hover: #a83b10;
+  --text: #433830;        /* warm dark brown */
+  --muted: #8a7060;       /* warm taupe */
+  --bg: #fdf6e3;          /* solarized cream */
+  --bg-alt: #eee8d5;      /* solarized warm sand */
+  --border: #d4c4a8;      /* desert tan */
+  --blue-tint: #fce8d0;   /* pale peach */
+  --blue-mid: #f0c090;    /* warm amber */
 }
 
 *, *::before, *::after {
