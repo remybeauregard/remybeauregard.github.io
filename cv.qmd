@@ -186,7 +186,8 @@ American Economic Association (AEA) Committee on the Status of Queer Individuals
 ## Skills
 
 *Languages:* English (native), Spanish (fluent)\
-*Programming:* Stata, R, Matlab, Python, SQL, JavaScript, Prolific, Qualtrics, LaTeX
+*Programming:* Stata, R, Python, SQL\
+*Experimental Platforms:* Qualtrics, Prolific
 
 ---
 
