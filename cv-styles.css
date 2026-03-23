@@ -52,10 +52,6 @@ body {
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);
-  margin: 0;
-  padding: 0;
-  padding-left:  max(1.5rem, calc((100% - 780px) / 2));
-  padding-right: max(1.5rem, calc((100% - 780px) / 2));
 }
 
 /* ── Focus Indicators (WCAG 2.4.7) ── */
@@ -75,18 +71,17 @@ a:hover {
   color: var(--primary-hover);
 }
 
-/* ── Page layout ── */
-main,
+/* ── Page layout (Bootstrap/cosmo handles the grid; just add top/bottom spacing) ── */
 #quarto-document-content,
 .quarto-container,
-#quarto-content,
-.page-columns {
-  max-width: 780px;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 2.5rem;
+#quarto-content {
+  padding-top: 1.5rem;
   padding-bottom: 4rem;
-  display: block;
+}
+
+/* Align the TOC sidebar top with the main content top */
+#quarto-margin-sidebar {
+  padding-top: 4rem;
 }
 
 /* ── Title block ── */
@@ -125,11 +120,46 @@ address.cv-contact {
   font-style: normal;
   font-size: 0.92rem;
   color: var(--text);
-  margin: 0.5rem 0 0.25rem;
+  margin: 0.5rem 0 2.25rem;
   line-height: 1.6;
 }
 address.cv-contact a {
   color: var(--primary);
+}
+
+/* ── Table of contents (Bootstrap sidebar handles positioning) ── */
+#TOC {
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+#TOC h2 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  border-bottom: none;
+  margin: 0 0 0.4rem;
+  padding-bottom: 0;
+}
+#TOC ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#TOC li {
+  margin-bottom: 0.2rem;
+}
+#TOC a {
+  color: var(--text);
+  text-decoration: none;
+}
+#TOC a:hover {
+  color: var(--primary);
+}
+#TOC a.active {
+  color: var(--primary);
+  font-weight: 600;
 }
 
 /* ── Section headings (WCAG 2.4.6) ── */
@@ -197,13 +227,15 @@ hr {
   margin: 2.5rem 0 1rem;
 }
 
+/* ── Other formats ── */
+.cv-other-formats {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
 /* ── Responsive (WCAG 1.4.10 Reflow) ── */
 @media (max-width: 640px) {
-  body {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   h1.title {
     font-size: 1.6rem;
   }
@@ -222,6 +254,6 @@ hr {
 
 /* ── Print (suppress browser chrome, not needed since PDF is rendered by Quarto) ── */
 @media print {
-  #TOC { display: none; }
+  #TOC, .cv-other-formats { display: none; }
   a { color: inherit; text-decoration: none; }
 }

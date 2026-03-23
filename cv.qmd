@@ -4,7 +4,10 @@ subtitle: "he/him · Curriculum Vitae"
 format:
   html:
     toc: true
-    theme: none
+    toc-depth: 2
+    toc-title: "Experience"
+    toc-location: right
+    theme: cosmo
     css: cv-styles.css
     embed-resources: true
     lang: en
@@ -190,8 +193,3 @@ American Economic Association (AEA) Committee on the Status of Queer Individuals
 
 *Last revised: March 2026*
 
-::: {.content-visible when-format="html"}
-## Other Formats
-
-- [PDF](cv.pdf)
-:::
