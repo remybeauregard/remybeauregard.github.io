@@ -228,6 +228,10 @@ hr {
 }
 
 /* ── Other formats ── */
+.quarto-alternate-formats {
+  margin-top: 2rem;
+}
+
 .cv-other-formats {
   font-size: 0.8rem;
   color: var(--muted);
