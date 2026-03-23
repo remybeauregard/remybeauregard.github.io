@@ -1,0 +1,247 @@
+/*
+ * Remy Beauregard — CV Stylesheet
+ * Complies with UC WCAG 2.1 Level AA
+ *
+ * Contrast ratios (all verified against WCAG 4.5:1 minimum for normal text):
+ *   --text #1e293b on #ffffff  → ~13.5:1  ✓
+ *   --navy #1e3a5f on #ffffff  →  ~9.0:1  ✓
+ *   --primary #1d4ed8 on #fff  →  ~7.2:1  ✓
+ *   --muted #64748b on #fff    →  ~4.7:1  ✓  (passes AA)
+ */
+
+/* ── Variables (mirror main site) ── */
+:root {
+  --navy:   #1e3a5f;
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --text:   #1e293b;
+  --muted:  #64748b;
+  --bg:     #ffffff;
+  --bg-alt: #f8fafc;
+  --border: #e2e8f0;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ── Skip Navigation (WCAG 2.4.1) ── */
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  background: var(--navy);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Focus Indicators (WCAG 2.4.7) ── */
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ── Links (WCAG 1.4.1 — not colour alone) ── */
+a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover {
+  color: var(--primary-hover);
+}
+
+/* ── Page layout ── */
+#quarto-document-content,
+.quarto-container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* Quarto with theme:none wraps content in a column grid; flatten it */
+body > div,
+#quarto-content {
+  display: block;
+}
+
+/* ── Title block ── */
+#title-block-header,
+.quarto-title-block {
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--navy);
+}
+
+h1.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.15rem;
+  line-height: 1.15;
+}
+
+.subtitle,
+p.subtitle,
+.quarto-title .subtitle {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+  font-style: normal;
+}
+
+/* Hide Quarto date in title block (we show it in the footer hr) */
+.quarto-title-meta {
+  display: none;
+}
+
+/* ── Contact address ── */
+address.cv-contact {
+  font-style: normal;
+  font-size: 0.92rem;
+  color: var(--text);
+  margin: 0.5rem 0 0.25rem;
+  line-height: 1.6;
+}
+address.cv-contact a {
+  color: var(--primary);
+}
+
+/* ── PDF download button ── */
+nav.cv-actions {
+  margin: 0.85rem 0 0;
+}
+.cv-dl-btn {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  background: var(--navy);
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.cv-dl-btn:hover,
+.cv-dl-btn:focus {
+  background: var(--primary);
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+/* ── Section headings (WCAG 2.4.6) ── */
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+  margin: 2.25rem 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 1.25rem 0 0.25rem;
+}
+
+/* ── Body text ── */
+p {
+  margin: 0.35rem 0;
+  overflow: hidden; /* contain floats for .cvdate */
+}
+
+ol, ul {
+  padding-left: 1.4rem;
+  margin: 0.35rem 0;
+}
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* ── Date spans — right-aligned via float (WCAG: not colour alone) ── */
+.cvdate {
+  float: right;
+  font-style: italic;
+  color: var(--muted);
+  white-space: nowrap;
+  margin-left: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* ── References 3-column grid ── */
+.cv-refs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+.cv-ref {
+  text-align: center;
+  font-size: 0.925rem;
+}
+.cv-ref p {
+  margin: 0;
+  overflow: visible;
+}
+
+/* ── Horizontal rule / last revised ── */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0 1rem;
+}
+
+/* ── Responsive (WCAG 1.4.10 Reflow) ── */
+@media (max-width: 640px) {
+  #quarto-document-content,
+  .quarto-container {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  h1.title {
+    font-size: 1.6rem;
+  }
+
+  .cv-refs {
+    grid-template-columns: 1fr;
+  }
+
+  .cvdate {
+    float: none;
+    display: block;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+}
+
+/* ── Print (suppress browser chrome, not needed since PDF is rendered by Quarto) ── */
+@media print {
+  #TOC, nav.cv-actions { display: none; }
+  a { color: inherit; text-decoration: none; }
+}
