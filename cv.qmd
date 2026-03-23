@@ -11,6 +11,12 @@ format:
     css: cv-styles.css
     embed-resources: true
     lang: en
+    include-in-header:
+      text: |
+        <link rel="icon" type="image/x-icon" href="Media/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="Media/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="Media/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="Media/apple-touch-icon.png" />
     page-layout: article
   pdf:
     documentclass: article

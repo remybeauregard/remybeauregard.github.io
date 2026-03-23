@@ -67,7 +67,7 @@ If a PDF must be used, it should be run through a PDF accessibility checker and 
 
 **New research paper** — Add a `<li class="paper">` block inside the appropriate `<ul class="paper-list">` in `index.html`. Include a unique `id` on the abstract element and wire it to the toggle button via `aria-controls`. Use descriptive `alt` text on any embedded figures.
 
-**New media file** — Place images in `Media/`. PNGs are used for research graphics. Prefer HTML over PDF for any linked documents.
+**New media file** — Place images in `Media/`. PNGs are used for research graphics. Prefer HTML over PDF for any linked documents. Favicon files were generated with [favicon.io](https://favicon.io/favicon-generator/) and are also stored in `Media/`.
 
 **CV changes** — Edit `cv.qmd`, then run `quarto render cv.qmd` and commit all three files (`cv.qmd`, `cv.html`, `cv.pdf`) together.
 
