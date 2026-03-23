@@ -132,28 +132,6 @@ address.cv-contact a {
   color: var(--primary);
 }
 
-/* ── PDF download button ── */
-nav.cv-actions {
-  margin: 0.85rem 0 0;
-}
-.cv-dl-btn {
-  display: inline-block;
-  padding: 0.35rem 0.9rem;
-  background: var(--navy);
-  color: #ffffff !important;
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  border-radius: 4px;
-  transition: background 0.15s;
-}
-.cv-dl-btn:hover,
-.cv-dl-btn:focus {
-  background: var(--primary);
-  text-decoration: none;
-  color: #ffffff !important;
-}
-
 /* ── Section headings (WCAG 2.4.6) ── */
 h2 {
   font-size: 1.2rem;
@@ -244,6 +222,6 @@ hr {
 
 /* ── Print (suppress browser chrome, not needed since PDF is rendered by Quarto) ── */
 @media print {
-  #TOC, nav.cv-actions { display: none; }
+  #TOC { display: none; }
   a { color: inherit; text-decoration: none; }
 }

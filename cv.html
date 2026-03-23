@@ -587,25 +587,37 @@ address.cv-contact a {
 color: var(--primary);
 }
 
-nav.cv-actions {
+#TOC {
 margin: 0.85rem 0 0;
+font-size: 0.8rem;
 }
-.cv-dl-btn {
-display: inline-block;
-padding: 0.35rem 0.9rem;
-background: var(--navy);
-color: #ffffff !important;
-text-decoration: none;
-font-size: 0.875rem;
-font-weight: 500;
-border-radius: 4px;
-transition: background 0.15s;
+#TOC ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-wrap: wrap;
 }
-.cv-dl-btn:hover,
-.cv-dl-btn:focus {
-background: var(--primary);
+#TOC li::after {
+content: ' · ';
+color: var(--muted);
+white-space: pre;
+}
+#TOC li:last-child::after {
+content: '';
+}
+#TOC a {
+color: var(--primary);
 text-decoration: none;
-color: #ffffff !important;
+}
+#TOC a:hover {
+text-decoration: underline;
+}
+
+.cv-other-formats {
+font-size: 0.8rem;
+color: var(--muted);
+margin-top: 0.5rem;
 }
 
 h2 {
@@ -686,7 +698,7 @@ font-size: 0.875rem;
 }
 
 @media print {
-#TOC, nav.cv-actions { display: none; }
+#TOC, .cv-other-formats { display: none; }
 a { color: inherit; text-decoration: none; }
 }
 </style>
@@ -705,8 +717,48 @@ a { color: inherit; text-decoration: none; }
 <address class="cv-contact" aria-label="Contact information">
 <a href="mailto:rebeauregard@ucdavis.edu">rebeauregard@ucdavis.edu</a> · <a href="http://www.remybeauregard.com">remybeauregard.com</a> · (+1) 978-998-1299 · Citizenship: United States
 </address>
-<nav class="cv-actions" aria-label="CV downloads">
-<a href="cv.pdf" class="cv-dl-btn">Download PDF</a>
+<nav id="TOC" aria-label="Table of contents">
+<ul>
+<li>
+<a href="#education">Education</a>
+</li>
+<li>
+<a href="#fields">Fields</a>
+</li>
+<li>
+<a href="#references">References</a>
+</li>
+<li>
+<a href="#employment">Employment</a>
+</li>
+<li>
+<a href="#publications">Publications</a>
+</li>
+<li>
+<a href="#working-papers">Working Papers</a>
+</li>
+<li>
+<a href="#ongoing-projects">Ongoing Projects</a>
+</li>
+<li>
+<a href="#teaching">Teaching</a>
+</li>
+<li>
+<a href="#seminar-and-conference-presentations">Presentations</a>
+</li>
+<li>
+<a href="#workshop-participation">Workshops</a>
+</li>
+<li>
+<a href="#awards-and-fellowships">Awards &amp; Fellowships</a>
+</li>
+<li>
+<a href="#academic-service">Academic Service</a>
+</li>
+<li>
+<a href="#skills">Skills</a>
+</li>
+</ul>
 </nav>
 <h2 id="education" class="anchored">Education</h2>
 <p><strong>Ph.D. in Economics</strong>, University of California, Davis <span class="cvdate"><em>2021–2026 (expected)</em></span></p>
@@ -784,6 +836,9 @@ American Economic Association (AEA) Committee on the Status of Queer Individuals
 <em>Experimental Platforms:</em> Qualtrics, Prolific</p>
 <hr>
 <p><em>Last revised: March 2026</em></p>
+<p class="cv-other-formats">
+<em>Other formats:</em> <a href="cv.pdf">PDF</a>
+</p>
 
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

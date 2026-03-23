@@ -3,7 +3,7 @@ title: "Remy Beauregard"
 subtitle: "he/him · Curriculum Vitae"
 format:
   html:
-    toc: false
+    toc: true
     theme: none
     css: cv-styles.css
     embed-resources: true
@@ -53,9 +53,6 @@ format:
   (+1) 978-998-1299 &middot; Citizenship: United States
 </address>
 
-<nav class="cv-actions" aria-label="CV downloads">
-  <a href="cv.pdf" class="cv-dl-btn">Download PDF</a>
-</nav>
 :::
 
 ## Education
@@ -192,3 +189,9 @@ American Economic Association (AEA) Committee on the Status of Queer Individuals
 ---
 
 *Last revised: March 2026*
+
+::: {.content-visible when-format="html"}
+## Other Formats
+
+- [PDF](cv.pdf)
+:::
