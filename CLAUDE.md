@@ -21,7 +21,7 @@ quarto render cv.qmd --to html
 quarto render cv.qmd --to pdf
 ```
 
-Both `cv.html` and `cv.pdf` are committed to the repo and served directly — there is no CI/CD pipeline.
+Both `cv.html` and `cv.pdf` are committed to the repo and served directly — there is no CI/CD pipeline. Whenever `cv.qmd` is edited, both output files must be re-rendered and committed alongside the source change.
 
 ## Architecture
 
