@@ -123,10 +123,10 @@ Behavioral economics, experimental economics, development economics
 
 ## Teaching
 
-**Instructor of Record**, UC Davis, ECN 102 Analysis of Economics Data `\hfill`{=latex} [*2024–2026*]{.cvdate}\
+**Instructor of Record**, UC Davis, ECN 102 Analysis of Economics Data `\hfill`{=latex} [*2024–*]{.cvdate}\
 *Terms:* Summer 2026 *(upcoming)*, Summer 2025, Spring 2025, Fall 2024, Summer 2024
 
-**Teaching Assistant**, UC Davis, Department of Economics `\hfill`{=latex} [*2021–2026*]{.cvdate}\
+**Teaching Assistant**, UC Davis, Department of Economics `\hfill`{=latex} [*2021–*]{.cvdate}\
 *Courses:* Behavioral Economics, Economic Development, Analysis of Economics Data, Econometrics and Machine Learning, Intermediate Macroeconomic Theory, US Economic History, Economics of Education
 
 **Teaching Assistant**, Vassar College, Departments of Economics and Psychology `\hfill`{=latex} [*2017–2019*]{.cvdate}\
@@ -165,13 +165,13 @@ American Economic Association (AEA) Committee on the Status of Queer Individuals
 
 ## Academic Service
 
-**Undergraduate Research Mentor**, Economics Department, UC Davis `\hfill`{=latex} [*2024–2026*]{.cvdate}
+**Undergraduate Research Mentor**, Economics Department, UC Davis `\hfill`{=latex} [*2024–*]{.cvdate}
 
-**Treasurer**, Economics Graduate Student Association, UC Davis `\hfill`{=latex} [*2024–2026*]{.cvdate}
+**Treasurer**, Economics Graduate Student Association, UC Davis `\hfill`{=latex} [*2024–*]{.cvdate}
 
 **Teaching Assistant Orientation Facilitator**, Center for Educational Effectiveness, UC Davis `\hfill`{=latex} [*2024*]{.cvdate}
 
-**Graduate Student Seminar Organizer**, Behavioral/Theory Group, UC Davis `\hfill`{=latex} [*2022–2026*]{.cvdate}
+**Graduate Student Seminar Organizer**, Behavioral/Theory Group, UC Davis `\hfill`{=latex} [*2022–*]{.cvdate}
 
 **Undergraduate Conference Panel Speaker**, Economics Department, UC Davis `\hfill`{=latex} [*2022–2025*]{.cvdate}
 
