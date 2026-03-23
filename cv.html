@@ -517,6 +517,8 @@ color: var(--text);
 background: var(--bg);
 margin: 0;
 padding: 0;
+padding-left: max(1.5rem, calc((100% - 780px) / 2));
+padding-right: max(1.5rem, calc((100% - 780px) / 2));
 }
 
 :focus-visible {
@@ -534,10 +536,6 @@ a:hover {
 color: var(--primary-hover);
 }
 
-body {
-padding-left: max(1.5rem, calc((100% - 780px) / 2));
-padding-right: max(1.5rem, calc((100% - 780px) / 2));
-}
 main,
 #quarto-document-content,
 .quarto-container,
@@ -669,9 +667,9 @@ margin: 2.5rem 0 1rem;
 }
 
 @media (max-width: 640px) {
-#quarto-document-content,
-.quarto-container {
-padding: 1.5rem 1rem 3rem;
+body {
+padding-left: 1rem;
+padding-right: 1rem;
 }
 h1.title {
 font-size: 1.6rem;

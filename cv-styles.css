@@ -54,6 +54,8 @@ body {
   background: var(--bg);
   margin: 0;
   padding: 0;
+  padding-left:  max(1.5rem, calc((100% - 780px) / 2));
+  padding-right: max(1.5rem, calc((100% - 780px) / 2));
 }
 
 /* ── Focus Indicators (WCAG 2.4.7) ── */
@@ -74,11 +76,6 @@ a:hover {
 }
 
 /* ── Page layout ── */
-body {
-  padding-left:  max(1.5rem, calc((100% - 780px) / 2));
-  padding-right: max(1.5rem, calc((100% - 780px) / 2));
-}
-
 main,
 #quarto-document-content,
 .quarto-container,
@@ -224,9 +221,9 @@ hr {
 
 /* ── Responsive (WCAG 1.4.10 Reflow) ── */
 @media (max-width: 640px) {
-  #quarto-document-content,
-  .quarto-container {
-    padding: 1.5rem 1rem 3rem;
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   h1.title {
