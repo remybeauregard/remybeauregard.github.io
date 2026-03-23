@@ -74,16 +74,21 @@ a:hover {
 }
 
 /* ── Page layout ── */
-#quarto-document-content,
-.quarto-container {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
+body {
+  padding-left:  max(1.5rem, calc((100% - 780px) / 2));
+  padding-right: max(1.5rem, calc((100% - 780px) / 2));
 }
 
-/* Quarto with theme:none wraps content in a column grid; flatten it */
-body > div,
-#quarto-content {
+main,
+#quarto-document-content,
+.quarto-container,
+#quarto-content,
+.page-columns {
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
   display: block;
 }
 
