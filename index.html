@@ -12,6 +12,8 @@
   </head>
   <body>
 
+    <a class="skip-link" href="#top">Skip to main content</a>
+
     <header class="site-header">
       <nav class="nav container">
         <a class="nav-name" href="#top">Remy Beauregard</a>
@@ -60,7 +62,7 @@
       <section id="about" class="section">
         <div class="container profile-layout">
           <div class="profile-photo-wrap">
-            <img src="Media/profile.jpeg" alt="Headshot of Remy Beaauregard, a young man with short brown hair, smiling warmly, wearing a white UC Davis crewneck sweater against a blurred blue background" class="profile-img" />
+            <img src="Media/profile.jpeg" alt="Headshot of Remy Beauregard, a young man with short brown hair, smiling warmly, wearing a white UC Davis crewneck sweater against a blurred blue background" class="profile-img" />
           </div>
           <div class="profile-bio">
             <h1>Remy Beauregard</h1>
@@ -97,7 +99,7 @@
                      target="_blank" rel="noopener noreferrer">
                     Inflation Expectations and Risk Premia in Emerging Bond Markets: Evidence from Mexico
                   </a>
-                  <button class="abstract-toggle" title="Expand" aria-expanded="false" aria-controls="abstract-jie">&#9660;</button>
+                  <button class="abstract-toggle" title="Expand" aria-label="Expand abstract" aria-expanded="false" aria-controls="abstract-jie">&#9660;</button>
                 </p>
                 <p class="paper-details">
                   with Jens H.&thinsp;E. Christensen, Eric Fischer, and Simon Zhu  &middot
@@ -117,7 +119,7 @@
                      target="_blank" rel="noopener noreferrer">
                     Paid With(out) Purpose: Perceptions, Preferences, and the Meaning of Work
                   </a>
-                  <button class="abstract-toggle" title="Expand" aria-expanded="false" aria-controls="abstract-jmp">&#9660;</button>
+                  <button class="abstract-toggle" title="Expand" aria-label="Expand abstract" aria-expanded="false" aria-controls="abstract-jmp">&#9660;</button>
                 </p>
                 <p class="paper-details">
                   <em><strong>Job Market Paper</strong> &middot; Awarded UC Davis Bacon Family Summer Fellowship 2025 &middot; Invited to present at Western Economics Association International North American Conferences (Denver 2026 &middot; San Francisco 2025), University of San Francisco Seminar Series (2026), Vassar College Seminar Series (2025), Economic Science Association North American Meeting (Tuscon 2025), Bay Area Behavioral and Experimental Economics Workshop (SJSU 2025), London School of Economics QueerConf (2025), American Economic Association CSQIEP Mentoring Conference (Chicago 2025)</em>
@@ -139,7 +141,7 @@
               <li class="paper">
                 <p class="paper-title">
                   Benefits on the Bench: Workfare, Mental Health, and the Role of the Team
-                  <button class="abstract-toggle" title="Expand" aria-expanded="false" aria-controls="abstract-bench">&#9660;</button>
+                  <button class="abstract-toggle" title="Expand" aria-label="Expand abstract" aria-expanded="false" aria-controls="abstract-bench">&#9660;</button>
                 </p>
                 <p class="paper-details">
                   with Carlos Brito &middot; <em> Invited to present at Advances with Field Experiments Conference (UChicago 2025) &middot; 
@@ -156,7 +158,7 @@ Presentation slides available upon request
               <li class="paper">
                 <p class="paper-title">
                   What Moves Meaning? Investigating Drivers of an Idiosyncratic Incentive
-                  <button class="abstract-toggle" title="Expand" aria-expanded="false" aria-controls="abstract-meaning">&#9660;</button>
+                  <button class="abstract-toggle" title="Expand" aria-label="Expand abstract" aria-expanded="false" aria-controls="abstract-meaning">&#9660;</button>
                 </p>
                 <p class="paper-details">
                   <em>Draft available soon</em>
@@ -172,7 +174,7 @@ Presentation slides available upon request
               <li class="paper">
                 <p class="paper-title">
                   Do Social Expectations Discourage Graduates From Accepting Low-paid Jobs? Evidence From Ghana
-                  <button class="abstract-toggle" title="Expand" aria-expanded="false" aria-controls="abstract-ghana">&#9660;</button>
+                  <button class="abstract-toggle" title="Expand" aria-label="Expand abstract" aria-expanded="false" aria-controls="abstract-ghana">&#9660;</button>
                 </p>
                 <p class="paper-details">
                     with Grace Abban-Ampiah and Leila Budgha &middot; <em>Pilot survey underway</em>
@@ -325,6 +327,7 @@ Presentation slides available upon request
         btn.setAttribute('aria-expanded', String(!expanded));
         btn.innerHTML = expanded ? '&#9660;' : '&#9650;';
         btn.title = expanded ? 'Expand' : 'Collapse';
+        btn.setAttribute('aria-label', expanded ? 'Expand abstract' : 'Collapse abstract');
         document.getElementById(btn.getAttribute('aria-controls')).hidden = expanded;
       });
     });

@@ -15,6 +15,30 @@
   box-sizing: border-box;
 }
 
+/* ── Skip Navigation (WCAG 2.4.1) ── */
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  background: var(--navy);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── Focus Indicators (WCAG 2.4.7) ── */
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -242,6 +266,8 @@ a:hover {
 
 .paper-title a {
   color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .paper-title a:hover {
@@ -357,6 +383,8 @@ a:hover {
 
 .footer a {
   color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .footer a:hover {
