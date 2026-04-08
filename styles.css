@@ -50,7 +50,8 @@ body {
 
 a {
   color: var(--primary);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 a:hover {
@@ -126,6 +127,7 @@ a:hover {
   display: flex;
   align-items: center;
   color: var(--muted);
+  text-decoration: none;
   transition: color 0.15s;
 }
 
@@ -307,7 +309,6 @@ a:hover {
 
 .teaching-statement {
   color: var(--muted);
-  font-style: italic;
   margin: 0 0 2rem;
 }
 
