@@ -1,6 +1,7 @@
 ---
 title: "Remy Beauregard"
 subtitle: "he/him · Curriculum Vitae"
+engine: knitr
 format:
   html:
     toc: true
@@ -223,5 +224,5 @@ American Economic Association (AEA) Committee on the Status of Queer Individuals
 
 ---
 
-*Last revised: March 2026*
+*Last revised: `r format(Sys.Date(), "%B %Y")`*
 
