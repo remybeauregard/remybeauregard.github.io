@@ -19,7 +19,16 @@ format:
         <link rel="icon" type="image/png" sizes="16x16" href="Media/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="Media/apple-touch-icon.png" />
         <script>
-        window.addEventListener('load', function () {
+        document.addEventListener('DOMContentLoaded', function () {
+          /* Insert skip link as very first child of <body> so it is the first
+             focusable element for keyboard users (WCAG 2.4.1).
+             include-before-body cannot be used because Quarto injects it inside
+             its layout wrapper, after the sidebar. */
+          var skip = document.createElement('a');
+          skip.href = '#quarto-document-content';
+          skip.className = 'skip-link';
+          skip.textContent = 'Skip to main content';
+          document.body.insertBefore(skip, document.body.firstChild);
           /* Fix heading hierarchy: sidebar h2s appear before h1 in DOM order (WCAG 1.3.1).
              Demote them to <p> so the h1 title is the first heading on the page. */
           function demoteH2(el) {
@@ -33,6 +42,8 @@ format:
           demoteH2(document.getElementById('toc-title'));
           var altH2 = document.querySelector('.quarto-alternate-formats h2');
           if (altH2) demoteH2(altH2);
+        });
+        window.addEventListener('load', function () {
           /* Hide decorative anchor links — anchorjs assigns the same aria-label to
              every section anchor, which accessibility checkers flag as duplicate links. */
           document.querySelectorAll('a.anchorjs-link').forEach(function (a) {
@@ -41,9 +52,6 @@ format:
           });
         });
         </script>
-    include-before-body:
-      text: |
-        <a href="#quarto-document-content" class="skip-link">Skip to main content</a>
     page-layout: article
   pdf:
     documentclass: article
