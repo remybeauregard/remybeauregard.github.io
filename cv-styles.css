@@ -132,7 +132,9 @@ address.cv-contact a {
   font-size: 0.82rem;
   line-height: 1.5;
 }
-#TOC h2 {
+#TOC h2,
+#toc-title,
+.quarto-alternate-formats p {
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;

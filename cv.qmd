@@ -17,6 +17,32 @@ format:
         <link rel="icon" type="image/png" sizes="32x32" href="Media/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="Media/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="Media/apple-touch-icon.png" />
+        <script>
+        window.addEventListener('load', function () {
+          /* Fix heading hierarchy: sidebar h2s appear before h1 in DOM order (WCAG 1.3.1).
+             Demote them to <p> so the h1 title is the first heading on the page. */
+          function demoteH2(el) {
+            if (!el) return;
+            var p = document.createElement('p');
+            if (el.id) p.id = el.id;
+            p.className = el.className;
+            p.innerHTML = el.innerHTML;
+            el.parentNode.replaceChild(p, el);
+          }
+          demoteH2(document.getElementById('toc-title'));
+          var altH2 = document.querySelector('.quarto-alternate-formats h2');
+          if (altH2) demoteH2(altH2);
+          /* Hide decorative anchor links — anchorjs assigns the same aria-label to
+             every section anchor, which accessibility checkers flag as duplicate links. */
+          document.querySelectorAll('a.anchorjs-link').forEach(function (a) {
+            a.setAttribute('aria-hidden', 'true');
+            a.setAttribute('tabindex', '-1');
+          });
+        });
+        </script>
+    include-before-body:
+      text: |
+        <a href="#quarto-document-content" class="skip-link">Skip to main content</a>
     page-layout: article
   pdf:
     documentclass: article
