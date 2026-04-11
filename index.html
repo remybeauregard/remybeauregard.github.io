@@ -323,7 +323,6 @@ Presentation slides available upon request
       btn.addEventListener('click', () => {
         const expanded = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!expanded));
-        btn.innerHTML = expanded ? '&#9660;' : '&#9650;';
         btn.title = expanded ? 'Expand' : 'Collapse';
         btn.setAttribute('aria-label', expanded ? 'Expand abstract' : 'Collapse abstract');
         document.getElementById(btn.getAttribute('aria-controls')).hidden = expanded;
