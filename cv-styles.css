@@ -137,12 +137,16 @@ address.cv-contact a {
 .quarto-alternate-formats p {
   font-size: 0.72rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
   color: var(--muted);
   border-bottom: none;
   margin: 0 0 0.4rem;
   padding-bottom: 0;
+}
+/* uppercase only on the h2 (pre-JS static state); <p> elements must not use
+   text-transform: uppercase or accessibility checkers flag them (WCAG 1.4) */
+#TOC h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 #TOC ul {
   list-style: none;
