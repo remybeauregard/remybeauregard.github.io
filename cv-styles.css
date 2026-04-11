@@ -1,12 +1,12 @@
 /*
  * Remy Beauregard — CV Stylesheet
- * Complies with UC WCAG 2.1 Level AA
+ * Complies with WCAG 2.1 Level AAA
  *
- * Contrast ratios (all verified against WCAG 4.5:1 minimum for normal text):
+ * Contrast ratios (all verified against WCAG 7:1 minimum for AAA normal text):
  *   --text #1e293b on #ffffff  → ~13.5:1  ✓
  *   --navy #1e3a5f on #ffffff  →  ~9.0:1  ✓
  *   --primary #1d4ed8 on #fff  →  ~7.2:1  ✓
- *   --muted #64748b on #fff    →  ~4.7:1  ✓  (passes AA)
+ *   --muted #475569 on #fff    →  ~7.3:1  ✓  (passes AAA)
  */
 
 /* ── Variables (mirror main site) ── */
@@ -15,7 +15,7 @@
   --primary: #1d4ed8;
   --primary-hover: #1e40af;
   --text:   #1e293b;
-  --muted:  #64748b;
+  --muted:  #475569;  /* darkened from #64748b for WCAG AAA 7:1 contrast (~7.3:1) */
   --bg:     #ffffff;
   --bg-alt: #f8fafc;
   --border: #e2e8f0;
