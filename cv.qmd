@@ -101,7 +101,7 @@ format:
 
 ## Education
 
-**Ph.D. in Economics**, University of California, Davis `\hfill`{=latex} [*2021–2026 (expected)*]{.cvdate}
+**Ph.D. in Economics**, University of California, Davis `\hfill`{=latex} [*2021–2027 (expected)*]{.cvdate}
 
 **B.A. in Economics & Psychology**, Vassar College `\hfill`{=latex} [*2015–2019*]{.cvdate}
 
