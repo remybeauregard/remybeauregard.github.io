@@ -285,6 +285,19 @@ a:hover {
   color: var(--muted);
 }
 
+.badge-new {
+  display: inline-block;
+  background: var(--blue-tint);
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.1em 0.45em;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 0.15em;
+}
+
 .paper-abstract {
   margin: 0.5rem 0 0;
   font-size: 0.9rem;
