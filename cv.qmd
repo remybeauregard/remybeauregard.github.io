@@ -155,12 +155,14 @@ Behavioral economics, experimental economics, development economics
 ## Working Papers
 
 1. **[Paid With(out) Purpose: Perceptions, Preferences, and the Meaning of Work](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676482)** *(Job Market Paper)*
+2. **[What Moves Meaning? Investigating Drivers of an Idiosyncratic Incentive](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6664038)** *(Forthcoming on SSRN)*
 
 ## Ongoing Projects
 
-1. **Benefits on the Bench: Workfare, Mental Health, and the Role of the Team** (with Carlos Brito)
-2. **What Moves Meaning? Investigating Drivers of an Idiosyncratic Incentive**
-3. **Do Social Expectations Discourage Graduates From Accepting Low-paid Jobs? Evidence From Ghana** (with Grace Abban-Ampiah and Leïla Njee Bugha)
+1. **pAIn or gAIn? Meaningful Work in the Age of AI**
+2. **Peer Effects on Novel Strategy Diffusion**
+3. **Benefits on the Bench: Workfare, Mental Health, and the Role of the Team** (with Carlos Brito)
+4. **Do Social Expectations Discourage Graduates From Accepting Low-paid Jobs? Evidence From Ghana** (with Grace Abban-Ampiah and Leïla Njee Bugha)
 
 ## Teaching
 
