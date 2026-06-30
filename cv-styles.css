@@ -210,6 +210,12 @@ li {
   font-size: 0.95rem;
 }
 
+/* ── Thesis line — indented under degree heading ── */
+.cv-thesis {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
 /* ── References 3-column grid ── */
 .cv-refs {
   display: grid;
