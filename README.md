@@ -55,7 +55,7 @@ All materials in this repository must comply with [WCAG 2.1 Level AA](https://ww
 - **Semantic HTML** — Use appropriate heading hierarchy, landmark elements (`<header>`, `<main>`, `<footer>`, `<section>`), and `<nav>` for navigation.
 - **Language** — The `lang="en"` attribute must be present on all HTML documents.
 - **Links** — All links must have discernible text. Icon-only links (social icons in the nav) use `aria-label` and `title` attributes; SVG icons use `aria-hidden="true"`.
-- **Footer** — The site footer includes an accessibility contact (`rebeauregard@ucdavis.edu`) for users who cannot access content due to a disability. This must remain on all pages.
+- **Footer** — The site footer includes an accessibility contact (`remy.g.beauregard@gmail.com`) for users who cannot access content due to a disability. This must remain on all pages.
 
 ### PDF Accessibility
 
