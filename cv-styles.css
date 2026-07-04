@@ -1,24 +1,26 @@
 /*
- * Remy Beauregard — CV Stylesheet
- * Complies with WCAG 2.1 Level AAA
+ * Remy Beauregard — CV Stylesheet (HTML only; PDF is styled via LaTeX)
+ * Monochromatic "warm paper & ink" palette — mirrors the main site.
+ * Complies with WCAG 2.1 Level AA (text/navy/primary also meet AAA 7:1).
  *
- * Contrast ratios (all verified against WCAG 7:1 minimum for AAA normal text):
- *   --text #1e293b on #ffffff  → ~13.5:1  ✓
- *   --navy #1e3a5f on #ffffff  →  ~9.0:1  ✓
- *   --primary #1d4ed8 on #fff  →  ~7.2:1  ✓
- *   --muted #475569 on #fff    →  ~7.3:1  ✓  (passes AAA)
+ * Contrast ratios on --bg #faf8f2:
+ *   --text #26241d    → ~14.6:1  ✓ (AAA)
+ *   --navy #1b1a16    → ~16:1    ✓ (AAA)
+ *   --primary #3a382f → ~11:1    ✓ (AAA)
+ *   --muted #5a584e   →  ~6.7:1  ✓ (AA — normal text)
  */
 
 /* ── Variables (mirror main site) ── */
 :root {
-  --navy:   #1e3a5f;
-  --primary: #1d4ed8;
-  --primary-hover: #1e40af;
-  --text:   #1e293b;
-  --muted:  #475569;  /* darkened from #64748b for WCAG AAA 7:1 contrast (~7.3:1) */
-  --bg:     #ffffff;
-  --bg-alt: #f8fafc;
-  --border: #e2e8f0;
+  --navy:   #1b1a16;
+  --primary: #3a382f;
+  --primary-hover: #000000;
+  --text:   #26241d;
+  --muted:  #5a584e;
+  --bg:     #faf8f2;
+  --bg-alt: #f1eee4;
+  --border: #dcd8cb;
+  --font-serif: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
 }
 
 /* ── Reset ── */
@@ -47,11 +49,17 @@ html {
 }
 
 body {
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-serif);
   font-size: 1rem;
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);
+}
+
+/* Ensure the serif applies to Bootstrap/cosmo headings too */
+h1, h2, h3, h4, h5, h6,
+h1.title, .subtitle {
+  font-family: var(--font-serif);
 }
 
 /* ── Focus Indicators (WCAG 2.4.7) ── */
@@ -96,7 +104,7 @@ h1.title {
   font-size: 2rem;
   font-weight: 700;
   color: var(--navy);
-  letter-spacing: -0.02em;
+  letter-spacing: normal;
   margin: 0 0 0.15rem;
   line-height: 1.15;
 }
@@ -168,12 +176,26 @@ address.cv-contact a {
   font-weight: 600;
 }
 
+/* Margin TOC (cosmo/Bootstrap) active state — force monochrome, override theme blue */
+.sidebar nav[role="doc-toc"] ul > li > a.active,
+.sidebar nav[role="doc-toc"] ul > li > ul > li > a.active,
+nav[role="doc-toc"] a.active {
+  color: var(--navy) !important;
+  border-left-color: var(--navy) !important;
+  font-weight: 600;
+}
+.sidebar nav[role="doc-toc"] ul > li > a:hover,
+.sidebar nav[role="doc-toc"] ul > li > ul > li > a:hover,
+nav[role="doc-toc"] a:hover {
+  color: var(--primary) !important;
+}
+
 /* ── Section headings (WCAG 2.4.6) ── */
 h2 {
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--navy);
-  letter-spacing: -0.01em;
+  letter-spacing: normal;
   margin: 2.25rem 0 0.5rem;
   padding-bottom: 0.25rem;
   border-bottom: 1px solid var(--border);
