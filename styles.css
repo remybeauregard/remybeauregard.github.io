@@ -157,7 +157,7 @@ a:hover {
 
 .paper-abstract {
   margin: 0.5rem 0 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--text);
 }
 
@@ -228,7 +228,7 @@ a:hover {
 
 .contact-email {
   margin-top: 1.25rem !important;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 /* ── Research ── */
@@ -267,7 +267,7 @@ a:hover {
 .paper-title {
   font-weight: normal;
   margin: 0 0 0.1rem;
-  font-size: 0.975rem;
+  font-size: 1rem;
 }
 
 .paper-title a {
@@ -282,13 +282,13 @@ a:hover {
 
 .paper-details {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--muted);
 }
 
 .paper-abstract {
   margin: 0.5rem 0 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--text);
 }
 
@@ -373,19 +373,19 @@ a:hover {
 
 .course-code {
   font-weight: normal;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: var(--navy);
   white-space: nowrap;
   margin-right: 0.5rem;
 }
 
 .course-name {
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .course-abstract {
   margin: 0.5rem 0 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--text);
 }
 
