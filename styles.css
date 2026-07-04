@@ -1,14 +1,15 @@
 :root {
-  --navy: #1e3a5f;
-  --primary: #1d4ed8;
-  --primary-hover: #1e40af;
-  --text: #1e293b;
-  --muted: #475569;  /* darkened from #64748b for WCAG AAA 7:1 contrast (~7.3:1) */
-  --bg: #ffffff;
-  --bg-alt: #f8fafc;
-  --border: #e2e8f0;
-  --blue-tint: #dbeafe;
-  --blue-mid: #bfdbfe;
+  /* Monochromatic "warm paper & ink" palette — minimal / scholarly look */
+  --navy: #1b1a16;          /* ink: headings, nav name, course code */
+  --primary: #3a382f;       /* links & interactive accent (warm dark gray) */
+  --primary-hover: #000000; /* link / interactive hover */
+  --text: #26241d;          /* body ink (warm near-black) */
+  --muted: #5a584e;         /* secondary text — ~6.7:1 on paper (WCAG AA) */
+  --bg: #faf8f2;            /* warm paper */
+  --bg-alt: #f1eee4;        /* deeper paper for alternating sections */
+  --border: #dcd8cb;        /* warm hairline border */
+  --blue-tint: #eae7db;     /* subtle chip/badge background (kept monochrome) */
+  --blue-mid: #cbc7b8;      /* accent rule / left border (kept monochrome) */
 }
 
 *, *::before, *::after {
@@ -41,7 +42,7 @@
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
@@ -86,7 +87,7 @@ a:hover {
   color: var(--navy);
   text-decoration: none;
   white-space: nowrap;
-  letter-spacing: -0.01em;
+  letter-spacing: normal;
   flex-shrink: 0;
 }
 
@@ -151,7 +152,7 @@ a:hover {
   font-weight: 700;
   margin: 0 0 1.75rem;
   color: var(--navy);
-  letter-spacing: -0.02em;
+  letter-spacing: normal;
 }
 
 .paper-abstract {
@@ -210,7 +211,7 @@ a:hover {
   font-weight: 700;
   margin: 0 0 0.25rem;
   color: var(--navy);
-  letter-spacing: -0.02em;
+  letter-spacing: normal;
   line-height: 1.2;
 }
 
@@ -264,7 +265,7 @@ a:hover {
 }
 
 .paper-title {
-  font-weight: 600;
+  font-weight: normal;
   margin: 0 0 0.1rem;
   font-size: 0.975rem;
 }
@@ -283,19 +284,6 @@ a:hover {
   margin: 0;
   font-size: 0.9rem;
   color: var(--muted);
-}
-
-.badge-new {
-  display: inline-block;
-  background: var(--blue-tint);
-  color: var(--primary);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  padding: 0.1em 0.45em;
-  border-radius: 4px;
-  vertical-align: middle;
-  margin: 0 0.35em;
 }
 
 .paper-abstract {
@@ -384,7 +372,7 @@ a:hover {
 }
 
 .course-code {
-  font-weight: 700;
+  font-weight: normal;
   font-size: 0.875rem;
   color: var(--navy);
   white-space: nowrap;
@@ -461,30 +449,4 @@ a:hover {
   .profile-photo-wrap {
     justify-content: flex-start;
   }
-
-  .course {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.2rem;
-  }
-
-  .course-role {
-    white-space: normal;
-  }
-}
-
-.student-review {
-  margin: 0 0 1rem;
-  padding: 0.875rem 1.25rem;
-  border-left: 3px solid var(--blue-mid);
-  background: var(--bg-alt);
-  color: var(--muted);
-  font-style: italic;
-  font-size: 0.9rem;
-  line-height: 1.65;
-  border-radius: 0 4px 4px 0;
-}
-
-.student-review:last-child {
-  margin-bottom: 0;
 }

@@ -18,6 +18,7 @@ format:
         <link rel="icon" type="image/png" sizes="32x32" href="Media/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="Media/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="Media/apple-touch-icon.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" />
         <script>
         document.addEventListener('DOMContentLoaded', function () {
           /* Insert skip link as very first child of <body> so it is the first
@@ -101,17 +102,17 @@ format:
 
 ## Education
 
-**PhD in Economics**, University of California, Davis `\hfill`{=latex} [*2021–2026*]{.cvdate}\
+PhD in Economics, University of California, Davis `\hfill`{=latex} [*2021–2026*]{.cvdate}\
 `\hspace*{1.5em}`{=latex}[Dissertation: *Essays on the Economics of Meaningful Work*]{.cv-thesis}
 
-**BA in Economics & Psychology**, Vassar College `\hfill`{=latex} [*2015–2019*]{.cvdate}\
+BA in Economics & Psychology, Vassar College `\hfill`{=latex} [*2015–2019*]{.cvdate}\
 `\hspace*{1.5em}`{=latex}[Thesis: *Conflict Exposure and Human Capital Development: Evidence from the Rwandan Genocide*]{.cv-thesis}
 
 ## Employment
 
-**Visiting Assistant Professor**, Department of Economics, University of San Francisco `\hfill`{=latex} [*2026–*]{.cvdate}
+Visiting Assistant Professor, Department of Economics, University of San Francisco `\hfill`{=latex} [*2026–*]{.cvdate}
 
-**Research Associate**, International Group, Federal Reserve Bank of San Francisco `\hfill`{=latex} [*2019–2021*]{.cvdate}
+Research Associate, International Group, Federal Reserve Bank of San Francisco `\hfill`{=latex} [*2019–2021*]{.cvdate}
 
 ## Fields
 
@@ -123,22 +124,22 @@ Behavioral economics, experimental economics, development economics
 
 ## Working Papers
 
-1. **[Paid With(out) Purpose: Perceptions, Preferences, and the Meaning of Work](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676482)** *(Job Market Paper)*
-2. **[What Moves Meaning? Investigating Drivers of an Idiosyncratic Incentive](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6664038)**
+1. [Paid With(out) Purpose: Perceptions, Preferences, and the Meaning of Work](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5676482) (Job Market Paper)
+2. [What Moves Meaning? Investigating Drivers of an Idiosyncratic Incentive](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6664038)
 
 ## Ongoing Projects
 
-1. **Benefits on the Bench: Workfare, Mental Health, and the Role of the Team** (with Carlos Brito)
-2. **Do Social Expectations Discourage Graduates From Accepting Low-paid Jobs? Evidence From Ghana** (with Grace Abban-Ampiah and Leïla Njee Bugha)
-3. **pAIn or gAIn? Meaningful Work in the Age of AI**
-4. **Peer Effects on Novel Strategy Diffusion**
+1. Benefits on the Bench: Workfare, Mental Health, and the Role of the Team (with Carlos Brito)
+2. Do Social Expectations Discourage Graduates From Accepting Low-paid Jobs? Evidence From Ghana (with Grace Abban-Ampiah and Leïla Njee Bugha)
+3. pAIn or gAIn? Meaningful Work in the Age of AI
+4. Peer Effects on Novel Strategy Diffusion
 
 ## Teaching
 
 **University of San Francisco** *(upcoming)* `\hfill`{=latex} [*2026–*]{.cvdate}\
-ECON 110 Introductory Economics, ECON 672 Economics of Development (Graduate)
+ECON 110 Introductory Economics, ECON 365 Behavioral Economics, ECON 463/663 Experimental Economics (Graduate), ECON 623 Field Research Methods (Graduate), ECON 672 Economics of Development (Graduate)
 
-**UC Davis** `\hfill`{=latex} [*2024–2026*]{.cvdate}\
+**University of California, Davis** `\hfill`{=latex} [*2024–2026*]{.cvdate}\
 ECN 102 Analysis of Economics Data
 
 ## Seminar and Conference Presentations
@@ -159,60 +160,60 @@ American Economic Association (AEA) Committee on the Status of Queer Individuals
 
 ## Awards and Fellowships
 
-**Bacon Family Summer Fellowship**, UC Davis `\hfill`{=latex} [*2025*]{.cvdate}
+Bacon Family Summer Fellowship, UC Davis `\hfill`{=latex} [*2025*]{.cvdate}
 
-**Department Research Award**, UC Davis `\hfill`{=latex} [*2024, 2025*]{.cvdate}
+Department Research Award, UC Davis `\hfill`{=latex} [*2024, 2025*]{.cvdate}
 
-**Department Travel Award**, UC Davis `\hfill`{=latex} [*2024, 2025, 2026*]{.cvdate}
+Department Travel Award, UC Davis `\hfill`{=latex} [*2024, 2025, 2026*]{.cvdate}
 
-**[Ray Beaumont Award](https://economics.ucdavis.edu/beaumont-award)**, UC Davis `\hfill`{=latex} [*2024*]{.cvdate}
+[Ray Beaumont Award](https://economics.ucdavis.edu/beaumont-award), UC Davis `\hfill`{=latex} [*2024*]{.cvdate}
 
-**Non-Resident Tuition Fellowship**, UC Davis `\hfill`{=latex} [*2022*]{.cvdate}
+Non-Resident Tuition Fellowship, UC Davis `\hfill`{=latex} [*2022*]{.cvdate}
 
-**[Catherine Lucretia Blakeley Prize](https://www.vassar.edu/economics/courses-and-requirements/prizes-and-honors#recipients)**, Vassar College `\hfill`{=latex} [*2019*]{.cvdate}
+[Catherine Lucretia Blakeley Prize](https://www.vassar.edu/economics/courses-and-requirements/prizes-and-honors#recipients), Vassar College `\hfill`{=latex} [*2019*]{.cvdate}
 
-**Phi Beta Kappa, Omicron Delta Epsilon, Psi Chi Membership**, Vassar College `\hfill`{=latex} [*2019*]{.cvdate}
+Phi Beta Kappa, Omicron Delta Epsilon, Psi Chi Membership, Vassar College `\hfill`{=latex} [*2019*]{.cvdate}
 
-**General and Departmental Honors in Economics & Psychology**, Vassar College `\hfill`{=latex} [*2019*]{.cvdate}
+General and Departmental Honors in Economics & Psychology, Vassar College `\hfill`{=latex} [*2019*]{.cvdate}
 
-**Economics Ford Scholar**, Prof. Sarah Pearlman, Vassar College `\hfill`{=latex} [*2018*]{.cvdate}
+Economics Ford Scholar, Prof. Sarah Pearlman, Vassar College `\hfill`{=latex} [*2018*]{.cvdate}
 
 ## Academic Service
 
-**Department Seminar Organizer**, Economics Department, University of San Francisco `\hfill`{=latex} [*2026–*]{.cvdate}
+Department Seminar Organizer, Economics Department, University of San Francisco `\hfill`{=latex} [*2026–*]{.cvdate}
 
-**Undergraduate Research Mentor**, Economics Department, UC Davis `\hfill`{=latex} [*2024–2026*]{.cvdate}
+Undergraduate Research Mentor, Economics Department, UC Davis `\hfill`{=latex} [*2024–2026*]{.cvdate}
 
-**Treasurer**, Economics Graduate Student Association, UC Davis `\hfill`{=latex} [*2024–2026*]{.cvdate}
+Treasurer, Economics Graduate Student Association, UC Davis `\hfill`{=latex} [*2024–2026*]{.cvdate}
 
-**Teaching Assistant Orientation Facilitator**, Center for Educational Effectiveness, UC Davis `\hfill`{=latex} [*2024*]{.cvdate}
+Teaching Assistant Orientation Facilitator, Center for Educational Effectiveness, UC Davis `\hfill`{=latex} [*2024*]{.cvdate}
 
-**Graduate Student Seminar Organizer**, Behavioral/Theory Group, UC Davis `\hfill`{=latex} [*2022–2026*]{.cvdate}
+Graduate Student Seminar Organizer, Behavioral/Theory Group, UC Davis `\hfill`{=latex} [*2022–2026*]{.cvdate}
 
-**First-Year PhD Student Mentor**, Economics Department, UC Davis `\hfill`{=latex} [*2022–2025*]{.cvdate}
+First-Year PhD Student Mentor, Economics Department, UC Davis `\hfill`{=latex} [*2022–2025*]{.cvdate}
 
-**President / Co-President**, Economics Graduate Student Association, UC Davis `\hfill`{=latex} [*2022–2024*]{.cvdate}
+President / Co-President, Economics Graduate Student Association, UC Davis `\hfill`{=latex} [*2022–2024*]{.cvdate}
 
-**Economics Majors Committee**, Economics Department, Vassar College `\hfill`{=latex} [*2018–2019*]{.cvdate}
+Economics Majors Committee, Economics Department, Vassar College `\hfill`{=latex} [*2018–2019*]{.cvdate}
 
-**ENL / ESL Student Tutor**, Vassar English Language Learners Outreach Program `\hfill`{=latex} [*2016–2019*]{.cvdate}
+ENL / ESL Student Tutor, Vassar English Language Learners Outreach Program `\hfill`{=latex} [*2016–2019*]{.cvdate}
 
 ## References
 
 ::: {.content-visible when-format="html"}
 ::: {.cv-refs}
 ::: {.cv-ref}
-**Prof. Arman Rezaee** (chair)\
+Prof. Arman Rezaee (chair)\
 [abrezaee\@ucdavis.edu](mailto:abrezaee@ucdavis.edu)
 :::
 
 ::: {.cv-ref}
-**Prof. Anujit Chakraborty**\
+Prof. Anujit Chakraborty\
 [chakraborty\@ucdavis.edu](mailto:chakraborty@ucdavis.edu)
 :::
 
 ::: {.cv-ref}
-**Prof. Burkhard Schipper**\
+Prof. Burkhard Schipper\
 [bcschipper\@ucdavis.edu](mailto:bcschipper@ucdavis.edu)
 :::
 :::
@@ -221,18 +222,25 @@ American Economic Association (AEA) Committee on the Status of Queer Individuals
 ::: {.content-visible when-format="pdf"}
 \begin{center}
 \begin{minipage}[t]{0.32\textwidth}\centering
-\textbf{Prof.\ Arman Rezaee} (chair)\\\href{mailto:abrezaee@ucdavis.edu}{abrezaee@ucdavis.edu}
+Prof.\ Arman Rezaee (chair)\\\href{mailto:abrezaee@ucdavis.edu}{abrezaee@ucdavis.edu}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.32\textwidth}\centering
-\textbf{Prof.\ Anujit Chakraborty}\\\href{mailto:chakraborty@ucdavis.edu}{chakraborty@ucdavis.edu}
+Prof.\ Anujit Chakraborty\\\href{mailto:chakraborty@ucdavis.edu}{chakraborty@ucdavis.edu}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.32\textwidth}\centering
-\textbf{Prof.\ Burkhard Schipper}\\\href{mailto:bcschipper@ucdavis.edu}{bcschipper@ucdavis.edu}
+Prof.\ Burkhard Schipper\\\href{mailto:bcschipper@ucdavis.edu}{bcschipper@ucdavis.edu}
 \end{minipage}
 \end{center}
 :::
 
----
+```{=latex}
+\vspace{6pt}
+\noindent\rule{\linewidth}{0.4pt}
+```
+
+```{=html}
+<hr>
+```
 
 *Last revised: `r format(Sys.Date(), "%B %Y")`*
 
