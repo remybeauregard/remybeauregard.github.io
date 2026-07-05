@@ -120,12 +120,58 @@
       .fnref {
         font-size: 0.7em;
         line-height: 0;
+        position: relative;
       }
       .fnref a {
         text-decoration: none;
         padding: 0 0.1em;
       }
       .fnref a:hover { text-decoration: underline; }
+
+      /* Hover / focus tooltip revealing the note text (WCAG 1.4.13) */
+      .fnref a[data-tip]::after {
+        content: attr(data-tip);
+        position: absolute;
+        left: 0;
+        bottom: calc(100% + 0.5em);
+        width: max-content;
+        max-width: 17rem;
+        background: var(--navy);
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.45;
+        text-align: left;
+        padding: 0.5rem 0.7rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.12s ease;
+        z-index: 30;
+      }
+      /* small bridge so the pointer can travel from marker to tooltip (hoverable) */
+      .fnref a[data-tip]::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+        width: 2rem;
+        height: 0.6em;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .fnref a[data-tip]:hover::after,
+      .fnref a[data-tip]:focus-visible::after,
+      .fnref a[data-tip]:hover::before,
+      .fnref a[data-tip]:focus-visible::before {
+        opacity: 1;
+        visibility: visible;
+      }
+      body.tips-off .fnref a[data-tip]::after,
+      body.tips-off .fnref a[data-tip]::before {
+        display: none;
+      }
 
       /* Endnotes */
       .footnotes {
@@ -159,6 +205,7 @@
         @page { margin: 1in; }
         body { background: #ffffff; font-size: 11pt; }
         .topbar, .skip-link, .doc-actions, .footnote-back { display: none !important; }
+        .fnref a[data-tip]::after, .fnref a[data-tip]::before { display: none !important; }
         main { width: 100%; padding: 0; }
         a { color: var(--text); text-decoration: underline; }
       }
@@ -184,7 +231,7 @@
 
         <p>To start, some important affirmations: you are an incredible economist, you will find a job, and that job will be lucky to have you. Imposter syndrome and excessive self-doubt are the silent killers of progress, but know you can hold your head high with all you have accomplished. I was constantly keeping tabs on my emotions during the process to make sure I was not getting bogged down in feelings of pessimism or futility, as these can trap you in a negative spiral. Take critique and feedback as they come, do not be afraid to learn from your mistakes, but always remember the talent and skill that brought you to Davis and trust it to take you farther. The job market needs YOUR perspective on research, not just a carbon copy of someone else!</p>
 
-        <p>My first general recommendation is to spend significant time interrogating your own job preferences, as the entire search process (across advisors, Jenna<sup class="fnref"><a href="#fn1" id="fnref1" role="doc-noteref" aria-describedby="footnote-label">1</a></sup>, Kaitlin<sup class="fnref"><a href="#fn2" id="fnref2" role="doc-noteref" aria-describedby="footnote-label">2</a></sup>, etc.) will hinge on finding the best match for you. If you are not certain of your preferences or do not feel strongly about your next step, that is okay, but still try to identify some representative or prototypical job openings you feel would be a good fit for you (Jenna often asks you to do this explicitly). This is the real challenge of the market: preferences are constructed in response to the distribution of postings, but this distribution evolves constantly throughout the search process. Make sure to check job postings often, follow multiple job boards, and set up email blasts when new openings that meet your search criteria are posted. A good job match is a place where you will do your best work, feel supported and fulfilled, and be excited to continue your research. This feeds into my second (and probably most critical) point,</p>
+        <p>My first general recommendation is to spend significant time interrogating your own job preferences, as the entire search process (across advisors, Jenna<sup class="fnref"><a href="#fn1" id="fnref1" role="doc-noteref" aria-describedby="footnote-label" data-tip="Jenna Stearns, placement committee chair at the time of writing.">1</a></sup>, Kaitlin<sup class="fnref"><a href="#fn2" id="fnref2" role="doc-noteref" aria-describedby="footnote-label" data-tip="Kaitlin Aparicio, graduate program coordinator at the time of writing.">2</a></sup>, etc.) will hinge on finding the best match for you. If you are not certain of your preferences or do not feel strongly about your next step, that is okay, but still try to identify some representative or prototypical job openings you feel would be a good fit for you (Jenna often asks you to do this explicitly). This is the real challenge of the market: preferences are constructed in response to the distribution of postings, but this distribution evolves constantly throughout the search process. Make sure to check job postings often, follow multiple job boards, and set up email blasts when new openings that meet your search criteria are posted. A good job match is a place where you will do your best work, feel supported and fulfilled, and be excited to continue your research. This feeds into my second (and probably most critical) point,</p>
 
         <p>Open communication! It is absolutely imperative to be in high-frequency contact with your advisors, dissertation committee/letter writers, and Jenna throughout the job market process, whether it is going well, poorly, or somewhere in the middle. If your advisors do not understand the types of jobs you are targeting, they cannot write you the best letter of recommendation. If Jenna does not know the current state of your market, she cannot internally promote you most effectively. Advisors can also help narrow down options if you are still unsure of your search criteria; take their suggestions into consideration, of course, but above all be honest with them about what you want and what you do not. In this spirit,</p>
 
@@ -210,5 +257,24 @@
         </p>
       </article>
     </main>
+    <script>
+      /* Footnote tooltips: allow dismissing with Escape without moving the
+         pointer, and re-enable when the user hovers/focuses a marker again
+         (WCAG 2.1 SC 1.4.13, "Content on Hover or Focus"). */
+      (function () {
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') {
+            document.body.classList.add('tips-off');
+            var el = document.activeElement;
+            if (el && el.matches && el.matches('.fnref a')) el.blur();
+          }
+        });
+        document.querySelectorAll('.fnref a').forEach(function (a) {
+          var reenable = function () { document.body.classList.remove('tips-off'); };
+          a.addEventListener('mouseenter', reenable);
+          a.addEventListener('focus', reenable);
+        });
+      })();
+    </script>
   </body>
 </html>
