@@ -140,7 +140,7 @@ Behavioral economics, experimental economics, development economics
 ECON 110 Introductory Economics, ECON 365 Behavioral Economics, ECON 463/663 Experimental Economics (Graduate), ECON 623 Field Research Methods (Graduate), ECON 672 Economics of Development (Graduate)
 
 **University of California, Davis** `\hfill`{=latex} [*2024–2026*]{.cvdate}\
-ECN 102 Analysis of Economics Data
+ECN 102 Analysis of Economics Data, ECN 099/199 Independent Study
 
 ## Seminar and Conference Presentations
 
