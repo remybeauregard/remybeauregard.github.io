@@ -80,7 +80,7 @@ format:
           \begin{center}
           {\LARGE\bfseries Remy Beauregard} (he/him)\\[4pt]
           {\small
-            \href{mailto:remy.g.beauregard@gmail.com}{remy.g.beauregard@gmail.com}%
+            \href{mailto:rbeauregard@usfca.edu}{rbeauregard@usfca.edu}%
             \quad$|$\quad
             \href{http://www.remybeauregard.com}{remybeauregard.com}%
             \quad$|$\quad
@@ -93,7 +93,7 @@ format:
 
 ::: {.content-visible when-format="html"}
 <address class="cv-contact" aria-label="Contact information">
-  <a href="mailto:remy.g.beauregard@gmail.com">remy.g.beauregard@gmail.com</a> &middot;
+  <a href="mailto:rbeauregard@usfca.edu">rbeauregard@usfca.edu</a> &middot;
   <a href="http://www.remybeauregard.com">remybeauregard.com</a> &middot;
   (+1) 978-998-1299 &middot; Citizenship: United States
 </address>
