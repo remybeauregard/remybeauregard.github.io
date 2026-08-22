@@ -24,7 +24,7 @@ Three sections:
 - **Research** — publications, working papers, and ongoing projects, each with a collapsible abstract toggle (JavaScript, `aria-expanded`)
 - **Teaching** — instructor-of-record courses, TA history, and student reviews
 
-Navigation includes links to Research, Teaching, the HTML CV, and social icons (LinkedIn, Bluesky, AllTrails, GitHub).
+Navigation includes links to Research, Teaching, the HTML CV, and social icons (LinkedIn, Bluesky, AllTrails, Google Scholar).
 
 ## Building the CV
 
