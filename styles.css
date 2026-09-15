@@ -286,6 +286,39 @@ a:hover {
   color: var(--muted);
 }
 
+/* Chip-style link sitting alongside the status labels in .paper-details
+   (e.g. "Online Appendix"). Colour contrast: var(--primary) #3a382f on
+   var(--blue-tint) #eae7db is 9.5:1, and #ffffff on #3a382f is 11.8:1 for the
+   hover/focus state, so both states clear WCAG 2.1 AA (4.5:1) and AAA (7:1).
+   The chip is also underlined on hover/focus, so it is not distinguished by
+   colour alone (WCAG 1.4.1). Focus ring comes from the global :focus-visible
+   rule above. */
+.paper-badge {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.45rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6;
+  white-space: nowrap;
+  color: var(--primary);
+  background: var(--blue-tint);
+  border: 1px solid var(--blue-mid);
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.paper-badge:hover,
+.paper-badge:focus-visible {
+  color: #ffffff;
+  background: var(--primary);
+  border-color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .paper-abstract {
   margin: 0.5rem 0 0;
   font-size: 1rem;
