@@ -112,9 +112,9 @@ Research Collaborator, [Future of Labor Lab](https://www.folab.org/), University
 
 ## Education
 
-PhD in Economics, University of California, Davis `\hfill`{=latex} [*2026*]{.cvdate}
+PhD in Economics, University of California, Davis `\hfill`{=latex} [*2021–2026*]{.cvdate}
 
-BA in Economics & Psychology, Vassar College `\hfill`{=latex} [*2019*]{.cvdate}
+BA in Economics & Psychology, Vassar College `\hfill`{=latex} [*2015–2019*]{.cvdate}
 
 ## Fields
 
