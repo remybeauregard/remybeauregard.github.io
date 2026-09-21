@@ -100,19 +100,21 @@ format:
 
 :::
 
-## Education
-
-PhD in Economics, University of California, Davis `\hfill`{=latex} [*2021–2026*]{.cvdate}\
-`\hspace*{1.5em}`{=latex}[Dissertation: *Essays on the Economics of Meaningful Work*]{.cv-thesis}
-
-BA in Economics & Psychology, Vassar College `\hfill`{=latex} [*2015–2019*]{.cvdate}\
-`\hspace*{1.5em}`{=latex}[Thesis: *Conflict Exposure and Human Capital Development: Evidence from the Rwandan Genocide*]{.cv-thesis}
-
 ## Employment
 
 Visiting Assistant Professor, Department of Economics, University of San Francisco `\hfill`{=latex} [*2026–*]{.cvdate}
 
 Research Associate, International Group, Federal Reserve Bank of San Francisco `\hfill`{=latex} [*2019–2021*]{.cvdate}
+
+## Affiliations
+
+Research Collaborator, [Future of Labor Lab](https://www.folab.org/), University of Notre Dame `\hfill`{=latex} [*2026–*]{.cvdate}
+
+## Education
+
+PhD in Economics, University of California, Davis `\hfill`{=latex} [*2021–2026*]{.cvdate}
+
+BA in Economics & Psychology, Vassar College `\hfill`{=latex} [*2015–2019*]{.cvdate}
 
 ## Fields
 
