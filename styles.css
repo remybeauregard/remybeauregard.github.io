@@ -224,6 +224,9 @@ a:hover {
   width: 185px;
   height: 225px;
   object-fit: cover;
+  /* Bias the crop upward so there is background above the head, not a
+     centred crop that clips the hairline */
+  object-position: 50% 30%;
   border-radius: 0.75rem;
   display: block;
 }
