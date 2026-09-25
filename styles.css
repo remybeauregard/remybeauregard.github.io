@@ -413,7 +413,12 @@ a:hover {
 
 .teaching-statement {
   color: var(--muted);
-  margin: 0 0 2rem;
+  margin: 0 0 0.9rem;
+}
+
+/* Keep the 2rem gap only before the course list, not between the paragraphs */
+.teaching-statement:last-of-type {
+  margin-bottom: 2rem;
 }
 
 .course-group {
