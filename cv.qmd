@@ -139,7 +139,7 @@ Behavioral economics, experimental economics, development economics
 ## Teaching
 
 **University of San Francisco** `\hfill`{=latex} [*2026–*]{.cvdate}\
-ECON 110 Introductory Economics, ECON 365 Behavioral Economics, ECON 463/663 Experimental Economics (Graduate), ECON 672 Economics of Development (Graduate), ECON 673 Development Microeconomics (Graduate)
+ECON 110 Introductory Economics, ECON 365 Behavioral Economics, ECON 463/663 Experimental Economics (Graduate), ECON 672 Economics of Development (Graduate), ECON 473/673 Development Microeconomics (Graduate)
 
 **University of California, Davis** `\hfill`{=latex} [*2024–2026*]{.cvdate}\
 ECN 102 Analysis of Economics Data, ECN 099/199 Independent Study
