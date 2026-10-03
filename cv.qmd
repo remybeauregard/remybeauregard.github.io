@@ -197,7 +197,7 @@ Economics Majors Committee, Economics Department, Vassar College `\hfill`{=latex
 
 ENL / ESL Student Tutor, Vassar English Language Learners Outreach Program `\hfill`{=latex} [*2016–2019*]{.cvdate}
 
-## References
+## Committee Members
 
 ::: {.content-visible when-format="html"}
 ::: {.cv-refs}
