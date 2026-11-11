@@ -159,6 +159,8 @@ American Economic Association (AEA) Committee on the Status of Queer Individuals
 
 ## Awards and Fellowships
 
+Faculty Development Fund Travel Award (×2), University of San Francisco `\hfill`{=latex} [*2026*]{.cvdate}
+
 Bacon Family Summer Fellowship, UC Davis `\hfill`{=latex} [*2025*]{.cvdate}
 
 Department Research Award, UC Davis `\hfill`{=latex} [*2024, 2025*]{.cvdate}
